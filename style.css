@@ -1,10 +1,242 @@
+@font-face { font-family: "cur";
+src: url(assets/fonts/Isometra-Regular.ttf)
+}
+@font-face  {
+    font-family: 'nep';
+    src: url('assets/fonts/Jost-VariableFont_wght.ttf');
+}
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 50px;
-    background-color: aqua;
+    font-size: 16px;
+    background-color: #eaeaff;
 }
-.navbar-s > ul > li {
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-s {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    font-family: nep;
+    font-size: 42px;
+    margin: 15px;
+    box-shadow: 5px 10px 18px black;
+    position: sticky;
+top: 0;
+background-color: #eaeaff;
+z-index: 1000;
+}
+.portfolio {
+    font-family: cur, sans-serif;
+    font-size: 42px;
+    color: black;
+    text-decoration: none;
+}
+.my-image > img {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+}
+.my-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro {
+    margin-top: 70px;
+    margin-left: 40px;
+    font-family: nep;
+    font-size: 35px;   
+}
+/* this is for animation i am learning this concept, so i am not add it here  */
+/* .intro h1 {
     display: inline-block;
-    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+
+    animation:
+        typing 5s steps(18) forwards,
+        cursor 0.7s infinite;
+}
+
+@keyframes typing {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+} */
+
+.intro-text {
+  
+     margin: 60px auto;
+    max-width: 800px;
+    font-family: nep;
+}
+.intro-text h2 {
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 30000;
+    text-align: center;
+}
+.intro-text p {
+    font-size: 40px;
+    text-align: left;
+}
+.skills-preview {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+    font-family: nep;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.skills-preview h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.skills-preview ul {
+    display: flex;
+    text-align: left;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.skills-preview li {
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 55px;
+    border-left: 5px solid black;
+}
+.projects-preview {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+    font-family: nep;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.projects-preview h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.project-card {
+display: flex;
+flex-direction: column;
+margin: 30px;
+margin-bottom: 100px;
+column-gap: 40px;
+    padding: 30px;
+    text-align: left;
+    border: 2px solid black;
+    gap:40px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.project-card h3 {
+    font-size: 45px;
+    
+    margin-top: 0;
+}
+.project-card p {
+    font-size: 45px;
+    line-height: 1.6;
+    text-align: center;
+}
+.project-card a {
+display: inline-block;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color: skyblue;
+}
+.contact-preview {
+    max-width: 100%;
+    margin-top: 0;
+    padding: 30px 40px 80px;
+    text-align: center;
+    font-family: nep;
+    background-color: black;
+    color: white;
+}
+
+.contact-preview h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 25px;
+}
+
+.contact-preview p {
+    font-size: 45px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.contact-preview a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fixed-contact {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: nep;
+    font-size: 40px;
+    font-weight: 700;
+}
+.fixed-contact:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
