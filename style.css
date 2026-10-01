@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    background-color: aqua;
+}
+.navbar-s > ul > li {
+    display: inline-block;
+    margin: 10px;
+}
