@@ -10,6 +10,9 @@ body {
     padding: 0px;
     font-size: 16px;
     background-color: #eaeaff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .nav-links {
     display: flex;
@@ -50,6 +53,7 @@ z-index: 1000;
     font-family: nep;
     background-color: black;
     color: white;
+    flex: 1;
 }
 
 .contact-preview h2 {
@@ -109,3 +113,4 @@ z-index: 1000;
      .contact-info address strong { font-weight: 700; } 
      .contact-info address a { color: red; text-decoration: underline; font-weight: 700; } 
      .contact-info address a:hover { text-decoration: underline; } 
+     
